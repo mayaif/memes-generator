@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
+@import url(//fonts.googleapis.com/css?family=Inter);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Inter", "Karla", sans-serif;;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+
+}
+.App {
+  width: 600px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 0.1px solid rgb(236, 231, 231);
+  margin-top: 50px;
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+  border-radius: 10px;
+}
+main{
+  padding: 36px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: #FFFFFF;
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.logo--img{
+  width: 31.3px;
+  margin-right: 7px;
+}
+.nav--title{
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+.form--input{
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+.form--button{
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
   color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.meme{
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.random--img{
+  max-width: 100%;
+  border-radius: 5px;
+  
 }
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
